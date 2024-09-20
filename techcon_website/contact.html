@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechCon 2024</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        header, nav, main {
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: blue;
+        }
+        .contact-info, .social-media {
+            margin-bottom: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    "<h1>Contact Us</h1>"
+</header>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/schedule">Schedule</a>
+    <a href="/register">Register</a>
+</nav>
+
+<main>
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+    </section>
+
+    <section class="social-media">
+        <h2>Follow Us</h2>
+        <a href="https://facebook.com/techcon" target="_blank">Facebook</a>
+        <a href="https://twitter.com/techcon" target="_blank">Twitter</a>
+        <a href="https://instagram.com/techcon" target="_blank">Instagram</a>
+    </section>
+
+    <section class="map">
+        <h2>Conference Location</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.225610842766!2d-122.41941508468237!3d37.774929279759404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809e1f0e62b5%3A0x27e5c5dff11a5c4e!2sYour%20Venue%20Name!5e0!3m2!1sen!2sus!4v1625155578136!5m2!1sen!2sus"
+            allowfullscreen=""
+            loading="lazy"></iframe>
+    </section>
+
+    <section class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="/send-message" method="POST">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div>
+                <button type="submit">Send Message</button>
+        </div>
+    </form>
+</section>
+</main>
+<body>
+   <footer>
+    <p>copyright; 2021 TechCon
+   </footer> 
+</body>
+</html>
