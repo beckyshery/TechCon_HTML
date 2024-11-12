@@ -1,35 +1,54 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+// Header Component
+function Header() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <header style={{ backgroundColor: 'navy', color: 'white', textAlign: 'center', padding: '20px' }}>
+      <h1>My Favorite Cities</h1>
+    </header>
+  );
 }
 
-export default App
+// UserProfile Component
+function UserProfile(props) {
+  return (
+    <div style={{ border: '1px solid gray', padding: '10px', margin: '10px' }}>
+      <h2 style={{ color: 'blue' }}>{props.name}</h2>
+      <p>Age: <span style={{ fontWeight: 'bold' }}>{props.age}</span></p>
+      <p>Bio: {props.bio}</p>
+    </div>
+  );
+}
+
+// MainContent Component
+function MainContent() {
+  return (
+    <main style={{ padding: '20px', backgroundColor: '#f4f4f4' }}>
+      <h2 style={{ color: 'darkslategray' }}>Main Content</h2>
+      <p>This is where the main content will go.</p>
+    </main>
+  );
+}
+
+// Footer Component
+function Footer() {
+  return (
+    <footer style={{ backgroundColor: 'black', color: 'white', textAlign: 'center', padding: '10px' }}>
+      <p>&copy; 2024 My Favorite Cities. All rights reserved.</p>
+    </footer>
+  );
+}
+
+// App Component
+function App() {
+  return (
+    <div>
+      <Header />
+      <UserProfile name="John Doe" age="30" bio="A passionate traveler." />
+      <MainContent />
+      <Footer />
+    </div>
+  );
+}
+
+export default App;

@@ -1,10 +1,12 @@
+import React from 'react';
+
 function MainContent() {
-    return (
-      <main style={{ padding: '20px', backgroundColor: '#f0f0f0', textAlign: 'left' }}>
-        <p style={{ fontSize: '18px', color: '#333' }}>This is the main content area.</p>
-      </main>
-    );
-  }
-  
-  export default MainContent;
-  
+  return (
+    <main style={{ padding: '20px', backgroundColor: '#f4f4f4' }}>
+      <h2 style={{ color: 'darkslategray' }}>Main Content</h2>
+      <p>This is where the main content will go.</p>
+    </main>
+  );
+}
+
+export default MainContent;
